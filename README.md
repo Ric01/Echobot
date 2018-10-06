@@ -15,9 +15,9 @@ Puedes descargar NodeJS [aquí!](https://nodejs.org/es/)
 ### Instalación de los módulos de NodeJS para chatbots ###
 
 
-### SDK4 VS SDK3 DE BOT FRAMEWORK ###
+### Instalando el SDK3 Del Azure Bot Framework ###
 
-
+Hablar de las diferencias y de cómo instalar el SDK3 y diferencias vs SDK4.
 
 ### Instalación del bot framework emulator ###
 
