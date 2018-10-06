@@ -15,6 +15,10 @@ Puedes descargar NodeJS [aquí!](https://nodejs.org/es/)
 ### Instalación de los módulos de NodeJS para chatbots ###
 
 
+### SDK4 VS SDK3 DE BOT FRAMEWORK ###
+
+
+
 ### Instalación del bot framework emulator ###
 
 Como el nombre lo indica, el bot framework emulator permite realizar pruebas y debugging de modo local de los chatbots que desarrolles.
