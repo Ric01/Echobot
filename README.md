@@ -1,4 +1,4 @@
-# Echobot
+# Echobot :speech_balloon:
 Bot desarrollado en azure bot framework que repite lo que recibe (tutorial básico)
 
 
