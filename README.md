@@ -4,7 +4,7 @@ Tutorial para principiantes con un Bot desarrollado en **Azure Bot Framework** q
 
 ## Instalación y primeros pasos ## 
 
-Antes de poder chatear con tu bot debes completar algunos pasos en tu ambiente de desarrollo:
+Antes de poder chatear con tu bot debes completar algunos pasos para preparar tu ambiente de desarrollo:
 
 ### Instalación de NodeJs ###
 Si bien el Framework o marco de trabajo de Azure soporta C# como lenguaje de programación, nosotros nos enfocaremos en **NodeJs** que es una arquitectura modular basada en lenguaje javascript ejecutada del lado del servidor.
