@@ -33,7 +33,7 @@ Para preparar nuestro ambiente de desarrollo en Node es importante que iniciemos
 La manera en la que NodeJs lleva control de los paquetes requeridos e instalados para una aplicación es a través de un archivo denominado package.json. 
 
 #### El archivo package.json ####
-Este archivo está construido en formato JSON (Javascript Object Notation) y contiene información de los módulos requeridos y sus dependencias para una aplicación de NodeJs específica.
+Este archivo está construido en formato JSON (Javascript Object Notation) y contiene información general sobre la aplicación desarrollada así como también de los módulos requeridos y sus dependencias para nuestra aplicación de NodeJs específica.
 Para crear el archivo Json de dependencias de nuestro bot debemos ejecutar el comando
 
 `npm init`
