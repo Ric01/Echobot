@@ -22,7 +22,9 @@ Node viene instalado con una implementación de REPL para que puedas ir aprendie
 Las siglas REPL significan **Read-Evaluate-Print-Loop**, algo así como Leer-Evaluar-Imprimir-Volver al inicio. Para utilizar el REPL de Node basta con ejecutar el comando `node` desde el terminal e ingresarás al loop de node del cual puedes salir escribiendo `.exit` en el mismo terminal.
 
 
-### Instalación de los módulos de NodeJS para chatbots ###
+### NPM / El manejador de paquetes de NodeJs ###
+NodeJs viene con un manejador de paquetes de instalación llamado Node Package Manager (npm) y es el programa que permite llevar la instalación/configuración/desinstalación de los paquetes/módulos de node y sus respectivas dependencias.
+Para utilizarlo basta con escribir en un terminal `npm --help` para tener información de los comandos disponibles.
 
 
 ### Instalando el SDK3 Del Azure Bot Framework ###
