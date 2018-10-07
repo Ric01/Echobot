@@ -34,9 +34,11 @@ La manera en la que NodeJs lleva control de los paquetes requeridos e instalados
 
 #### El archivo package.json ####
 Este archivo está construido en formato JSON (Javascript Object Notation) y contiene información de los módulos requeridos y sus dependencias para una aplicación de NodeJs específica.
-Para crear el archivo Json de dependencias de nuestro bot debemos ejecutar el comando 
+Para crear el archivo Json de dependencias de nuestro bot debemos ejecutar el comando
+
 `npm init`
-y una vez finalizado obtendremos un archivo package.json en la raíz de nuestro directorio que se verá algo similar a esto
+
+y una vez finalizado obtendremos un archivo package.json en la raíz de nuestro directorio que contiene las prinicipales informaciones sobre nuestra aplicación.
 
 ![Lleando básico package.json](imagen_package_basico.png?raw=true "Archivo package.json")
 
