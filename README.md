@@ -19,7 +19,7 @@ Para este tutorial estoy utilizando la versión 8.9.4 de NodeJs. Si quieres revi
 ## El REPL de NodeJs ##
 
 Node viene instalado con una implementación de REPL para que puedas ir aprendiendo y conociendo más de este programa.
-Las siglas REPL significan Read-Evaluate-Print-Loop, algo así como Leer-Evaluar-Imprimir-Volver al inicio. Para utilizar el REPL de Node basta con ejecutar el comando `node` desde el terminal e ingresarás al loop de node del cual puedes salir escribiendo `.exit` en el mismo terminal.
+Las siglas REPL significan **Read-Evaluate-Print-Loop**, algo así como Leer-Evaluar-Imprimir-Volver al inicio. Para utilizar el REPL de Node basta con ejecutar el comando `node` desde el terminal e ingresarás al loop de node del cual puedes salir escribiendo `.exit` en el mismo terminal.
 
 
 ### Instalación de los módulos de NodeJS para chatbots ###
