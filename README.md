@@ -38,6 +38,7 @@ Para crear el archivo Json de dependencias de nuestro bot debemos ejecutar el co
 `npm init`
 y una vez finalizado obtendremos un archivo package.json en la raíz de nuestro directorio que se verá algo similar a esto
 
+![Lleando básico package.json](imagen_package_basico.png?raw=true "Archivo package.json")
 
 ### Instalando el SDK3 Del Azure Bot Framework ###
 
