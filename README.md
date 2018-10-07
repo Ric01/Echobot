@@ -44,14 +44,26 @@ y una vez finalizado obtendremos un archivo package.json en la raíz de nuestro 
 
 ### Instalando el SDK3 Del Azure Bot Framework ###
 
-Microsoft ya tiene disponible en Beta el SDK4 del Bot Framework que tiene muchas novedades para los desarrolladores, sin embargo, todavía no recomiendan el desarrollo en producción de bots con el SDK4. En este tutorial nos enfocaremos en el SDK3 (última versión estable).
+Microsoft ya tiene disponible en Beta el SDK4 del Bot Framework que tiene muchas novedades para los desarrolladores, sin embargo, todavía no recomiendan el desarrollo en producción de bots con el SDK4. En este tutorial nos enfocaremos en el SDK3 (última versión estable). Para instalar la versión del SDK3 debes utilizar el manejador de paquetes con el comando en la terminal:
 
 `npm install botbuilder@3.15.0`
 
-Este comando instalará las librerias en version 3.15.0 del SDKv3 de Azure Bot Framework. Si no incluyes el comando @3.15.0 se instalará la versión más reciente del bot framework (puede ser la sdkv4) y no funcionará este tutorial correctament.
+Este comando instalará las librerias en version 3.15.0 del SDKv3 de Azure Bot Framework. Si no incluyes el comando @3.15.0 se instalará la versión más reciente del bot framework (puede ser la sdkv4) y no funcionará este tutorial correctamente.
 Si instalaste por error la versión 4 hacia arriba puedes desinstalar fácilmente el módulo ejecutando en el terminal: 
 
 `npm uninstall botbuilder`
+
+### Listado de dependencias en package-lock.json ###
+
+Si lograste instalar correctamente la libreria botbuilder verás que se modificó el archivo package.json incluyendo automáticamente en las dependencias el módulo recién instalado.
+Adicional a eso se creó un archivo package-lock.json que incluye todas las dependencias y sus versiones respectivas que necesita el módulo botbuilder para su correcto funcionamiento.
+Mira un vistazo del archivo aquí.
+
+Package.json incluyendo la dependencia del botbuilder
+
+
+
+Ejemplo del package-lock.json
 
 
 
