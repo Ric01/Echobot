@@ -46,15 +46,25 @@ y una vez finalizado obtendremos un archivo package.json en la raíz de nuestro 
 
 Microsoft ya tiene disponible en Beta el SDK4 del Bot Framework que tiene muchas novedades para los desarrolladores, sin embargo, todavía no recomiendan el desarrollo en producción de bots con el SDK4. En este tutorial nos enfocaremos en el SDK3 (última versión estable).
 
+`npm install botbuilder@3.15.0`
+
+Este comando instalará las librerias en version 3.15.0 del SDKv3 de Azure Bot Framework. Si no incluyes el comando @3.15.0 se instalará la versión más reciente del bot framework (puede ser la sdkv4) y no funcionará este tutorial correctament.
+Si instalaste por error la versión 4 hacia arriba puedes desinstalar fácilmente el módulo ejecutando en el terminal: 
+
+`npm uninstall botbuilder`
+
+
 
 
 ### Instalación del bot framework emulator ###
 
 Como el nombre lo indica, el bot framework emulator permite realizar pruebas y debugging de modo local de los chatbots que desarrolles.
 
+Agregar screenshot del bot emulator con el echo
+
+
 ## Manos al código ##
 
-### El archivo de dependencias package.json ###
 
 ### El módulo restify ###
 
