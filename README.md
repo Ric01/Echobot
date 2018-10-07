@@ -27,9 +27,22 @@ NodeJs viene con un manejador de paquetes de instalación llamado Node Package M
 Para utilizarlo basta con escribir en un terminal `npm --help` para tener información de los comandos disponibles.
 
 
+### Preparando nuestro archivo de dependencias ###
+
+Para preparar nuestro ambiente de desarrollo en Node es importante que iniciemos la construcción de los módulos sobre los cuales se ejecutará nuestro Bot.
+La manera en la que NodeJs lleva control de los paquetes requeridos e instalados para una aplicación es a través de un archivo denominado package.json. 
+
+#### El archivo package.json ####
+Este archivo está construido en formato JSON (Javascript Object Notation) y contiene información de los módulos requeridos y sus dependencias para una aplicación de NodeJs específica.
+Para crear el archivo Json de dependencias de nuestro bot debemos ejecutar el comando 
+`npm init`
+
+
 ### Instalando el SDK3 Del Azure Bot Framework ###
 
-Hablar de las diferencias y de cómo instalar el SDK3 y diferencias vs SDK4.
+Microsoft ya tiene disponible en Beta el SDK4 del Bot Framework que tiene muchas novedades para los desarrolladores, sin embargo, todavía no recomiendan el desarrollo en producción de bots con el SDK4. En este tutorial nos enfocaremos en el SDK3 (última versión estable).
+
+
 
 ### Instalación del bot framework emulator ###
 
