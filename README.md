@@ -9,7 +9,7 @@ Antes de poder chatear con tu bot debes completar algunos pasos para preparar tu
 ### Instalación de NodeJs ###
 Si bien el Framework o marco de trabajo de Azure soporta C# como lenguaje de programación, nosotros nos enfocaremos en **NodeJs** que es una arquitectura modular basada en lenguaje javascript ejecutada del lado del servidor.
 
-Dependiendo de tu sistema operativo puedes descargar el archivo correspondiente para instalar NodeJs en tu computador. En este caso yo estoy utilizando un Macbook para el desarrollo del Chatbot.
+Dependiendo de tu sistema operativo puedes descargar el archivo correspondiente para instalar NodeJs en tu computador. En este caso yo estoy utilizando un Macbook con OSX EL CAPITAN (v10.11.6) para el desarrollo del Chatbot.
 Puedes descargar NodeJS [aquí!](https://nodejs.org/es/)
 
 Para este tutorial estoy utilizando la versión 8.9.4 de NodeJs. Si quieres revisar cuál versión tienes instalada puedes ejecutar el comando 
