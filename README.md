@@ -12,6 +12,10 @@ Si bien el Framework o marco de trabajo de Azure soporta C# como lenguaje de pro
 Dependiendo de tu sistema operativo puedes descargar el archivo correspondiente para instalar NodeJs en tu computador. En este caso yo estoy utilizando un Macbook para el desarrollo del Chatbot.
 Puedes descargar NodeJS [aquí!](https://nodejs.org/es/)
 
+Para este tutorial estoy utilizando la versión 8.9.4 de NodeJs. Si quieres revisar cuál versión tienes instalada puedes ejecutar el comando 
+
+`node --version`
+
 ### Instalación de los módulos de NodeJS para chatbots ###
 
 
