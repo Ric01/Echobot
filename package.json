@@ -1,0 +1,30 @@
+{
+  "name": "echobot",
+  "version": "1.0.0",
+  "description": "Bot que escribe de vuelta al usuario el mensaje recibido",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ric01/Echobot.git"
+  },
+  "keywords": [
+    "chatbot",
+    "azure",
+    "bot",
+    "botframework",
+    "microsoft"
+  ],
+  "author": "Ricardo Suarez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ric01/Echobot/issues"
+  },
+  "homepage": "https://github.com/Ric01/Echobot#readme",
+  "dependencies": {
+    "botbuilder": "^3.15.0",
+    "restify": "^7.2.2"
+  }
+}
