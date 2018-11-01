@@ -101,18 +101,49 @@ server.listen(process.env.port || process.env.PORT || 3978, function () {
 });`
 
 La función (restify.createServer(); crea una instancia para enviar y recibir solicitudes REST. Luego la línea server.listen(...) abre una conexión al puerto 3978 de nuestro computador para escuchar solicitudes a ese puerto específico.
+
 Las variables de entorno process.env.port y process.env.PORT son utilizadas cuando haces deploy sobre servidores remotos en los que no necesariamente esté disponible el puerto 3978 o en donde otras configuraciones hagan que se utilicen puertos distintos. Para este tutorial utilizaremos el puerto 3978.
-
-
-
 
 
 
 ## El Azure bot Framework ##
 
+El Marco de Trabajo (Framework) de Azure utiliza dos componentes principales para funcionar
+
 ### Chat Connector ###
 
+Está encargado del **enrutamiento de solicitudes de distintos canales** de los usuarios (SMS, email, Slack, Web) hacia la lógica de tu chatbot. Para lograr crear un conector se necesita tener una clave de Aplicación (AppId) y una contraseña de Aplicación(AppPassword) para autenticación. En el caso de uso local no necesitas tener clave. Cuando quieras colocar en producción tu chatbot vas a necesitar generar estas claves.
+`
+var inMemoryStorage = new builder.MemoryBotStorage();
+// Create chat connector for communicating with the Bot Framework Service
+var connector = new builder.ChatConnector({
+    appId: process.env.MicrosoftAppId,
+    appPassword: process.env.MicrosoftAppPassword
+});
+`
+Para escuchar los mensajes enviados necesitamos conectar nuestro servicio restify con el ChatConnector de Azure. 
+Eso lo realizamos con la siguiente línea de código.
+`
+// Enviamos mensajes al Endpoint /api/messages del ChatConnector 
+server.post('/api/messages', connector.listen());
+`
 ### Universal Bot de Azure ###
+
+Por último necesitamos incluir la lógica de negocios de nuestro Chatbot en la que se procesarán los mensajes enviados por el usuario y responderemos según corresponda. En este primer tutorial sólo repetiremos el mensaje recibido por el usuario.
+`
+// Recibir los mensajes del ChatConnector y agregar lógicas de respuesta
+var bot = new builder.UniversalBot(connector, function (session) {
+    session.send("Tú dijiste: %s", session.message.text);
+});
+`
+En este código instanciamos una variable bot del objeto UniversalBot que toma una conexión del ChatConnector (connector) y ejecuta una función al recibir mensajes a través de ese Conector.
+La variable session.message.text contiene el texto enviado por los usuarios.
+El método session.send(...) envía mensajes de vuelta al usuario a través del ChatConnector con el texto "Tu dijiste: mensaje" donde mensaje es el texto enviado por el usuario.
+
+
+
+
+
 
 ## Test y debug con el Azure Bot Emulator ##
 
