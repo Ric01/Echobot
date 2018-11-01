@@ -94,7 +94,7 @@ Para incluir restify en tu archivo de trabajo app.js debes incluir la siguiente 
 
 Utilizaremos el módulo restify para enviar mensajes usando POST al ChatConnector de Azure
 
-```
+```javascript
 // Setup Restify Server
 var server = restify.createServer();
 server.listen(process.env.port || process.env.PORT || 3978, function () {
@@ -115,7 +115,7 @@ El Marco de Trabajo (Framework) de Azure utiliza dos componentes principales par
 ### Chat Connector ###
 
 Está encargado del **enrutamiento de solicitudes de distintos canales** de los usuarios (SMS, email, Slack, Web) hacia la lógica de tu chatbot. Para lograr crear un conector se necesita tener una clave de Aplicación (AppId) y una contraseña de Aplicación(AppPassword) para autenticación. En el caso de uso local no necesitas tener clave. Cuando quieras colocar en producción tu chatbot vas a necesitar generar estas claves.
-```
+```javascript
 var inMemoryStorage = new builder.MemoryBotStorage();
 // Create chat connector for communicating with the Bot Framework Service
 var connector = new builder.ChatConnector({
