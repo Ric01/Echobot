@@ -70,15 +70,29 @@ Ejemplo del package-lock.json
 
 ### Instalación del bot framework emulator ###
 
-Como el nombre lo indica, el bot framework emulator permite realizar pruebas y debugging de modo local de los chatbots que desarrolles.
+Como el nombre lo indica, el bot framework emulator permite realizar pruebas y debugging de modo local de los chatbots que desarrolles. Sólo debes elegir la conexión local (localhost) al puerto 3978. 
+Incluso puedes realizar debugging de conexiones remotas utilizando ngrok, pero eso escapa del objetivo de nuestro tutorial. Si quieres hacer tunneling para tus conexiones puedes ver la información de ngrok [aquí!](https://ngrok.com/)
 
 ![Bot Framework Emulator](BotFrameworkEmulator.png?raw=true "Emulador de conversaciones Bot Framework")
 
 
 ## Manos al código ##
-
+El código de este primer bot es muy sencillo, sin embargo engloba las librerías más importantes para trabajar en cualquier bot. Ahora voy a darte el detalle de cada módulo/librería utilizada para trabajar sobre nuestro primer Chatbot.
 
 ### El módulo restify ###
+
+Para poder construir nuestras conexiones con el bot de azure necesitamos un middleware que nos permita realizar solicitudes REST. Para eso utilizamos [Restify!](http://restify.com/) que es un marco de trabajo que nos facilita las solicitudes y respuestas a APIS Rest.
+Para instalar restify en tu directorio de trabajo sólo debes ejecutar el comando 
+
+`npm i restify`
+
+Automáticamente el manejador de paquetes npm incluirá la dependencia en el archivo package.json.
+
+Para incluir restify en tu archivo de trabajo app.js debes incluir la siguiente línea de código:
+`npm uninstall botbuilder`
+
+`var restify = require('restify');`
+
 
 ## El Azure bot Framework ##
 
