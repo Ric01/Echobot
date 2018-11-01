@@ -84,13 +84,17 @@ El código de este primer bot es muy sencillo, sin embargo engloba las librería
 Para poder construir nuestras conexiones con el bot de azure necesitamos un middleware que nos permita realizar solicitudes REST. Para eso utilizamos [Restify!](http://restify.com/) que es un marco de trabajo que nos facilita las solicitudes y respuestas a APIS Rest.
 Para instalar restify en tu directorio de trabajo sólo debes ejecutar el comando npm i, es igual a npm install, 
 
-```npm i restify```
+```javascript
+npm i restify
+```
 
 Automáticamente el manejador de paquetes npm incluirá la dependencia en el archivo package.json.
 
 Para incluir restify en tu archivo de trabajo app.js debes incluir la siguiente línea de código:
 
-```var restify = require('restify');```
+```javascript
+var restify = require('restify');
+```
 
 Utilizaremos el módulo restify para enviar mensajes usando POST al ChatConnector de Azure
 
@@ -125,14 +129,14 @@ var connector = new builder.ChatConnector({
 ```
 Para escuchar los mensajes enviados necesitamos conectar nuestro servicio restify con el ChatConnector de Azure. 
 Eso lo realizamos con la siguiente línea de código.
-```
+```javascript
 // Enviamos mensajes al Endpoint /api/messages del ChatConnector 
 server.post('/api/messages', connector.listen());
 ```
 ### Universal Bot de Azure ###
 
 Por último necesitamos incluir la lógica de negocios de nuestro Chatbot en la que se procesarán los mensajes enviados por el usuario y responderemos según corresponda. En este primer tutorial sólo repetiremos el mensaje recibido por el usuario.
-```
+```javascript
 // Recibir los mensajes del ChatConnector y agregar lógicas de respuesta
 var bot = new builder.UniversalBot(connector, function (session) {
     session.send("Tú dijiste: %s", session.message.text);
@@ -146,11 +150,12 @@ El método session.send(...) envía mensajes de vuelta al usuario a través del 
 
 ## Test y debug con el Azure Bot Emulator ##
 
-**FELICITACIONES** 
+**FELICITACIONES**
+
 Si has llegado hasta aquí ya tienes un chatbot funcionando!!!
 Para probarlo sólo debes ejecutar en un terminal:
 
-```
+```javascript
 node app.js
 
 ```
