@@ -161,7 +161,7 @@ node app.js
 ```
 Y abrir el botframework emulator para seleccionar la conexión con localhost al puerto 3978 y tendrás un chatbot que repite lo que le envías! No es muy emocionante pero ya has revisado el contenido básico de desarrollo de Chatbots mucho más complejos!
 
-## Deja una estrella ##
+## Deja una estrella :star: :star2: ##
 
 Encontraste útil este tutorial??. **Deja una estrella en el repositorio como muestra de agradecimiento!**
 
