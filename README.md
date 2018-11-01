@@ -82,16 +82,30 @@ El código de este primer bot es muy sencillo, sin embargo engloba las librería
 ### El módulo restify ###
 
 Para poder construir nuestras conexiones con el bot de azure necesitamos un middleware que nos permita realizar solicitudes REST. Para eso utilizamos [Restify!](http://restify.com/) que es un marco de trabajo que nos facilita las solicitudes y respuestas a APIS Rest.
-Para instalar restify en tu directorio de trabajo sólo debes ejecutar el comando 
+Para instalar restify en tu directorio de trabajo sólo debes ejecutar el comando npm i, es igual a npm install, 
 
 `npm i restify`
 
 Automáticamente el manejador de paquetes npm incluirá la dependencia en el archivo package.json.
 
 Para incluir restify en tu archivo de trabajo app.js debes incluir la siguiente línea de código:
-`npm uninstall botbuilder`
 
 `var restify = require('restify');`
+
+Utilizaremos el módulo restify para enviar mensajes usando POST al ChatConnector de Azure
+
+`// Setup Restify Server
+var server = restify.createServer();
+server.listen(process.env.port || process.env.PORT || 3978, function () {
+   console.log('%s listening to %s', server.name, server.url); 
+});`
+
+La función (restify.createServer(); crea una instancia para enviar y recibir solicitudes REST. Luego la línea server.listen(...) abre una conexión al puerto 3978 de nuestro computador para escuchar solicitudes a ese puerto específico.
+Las variables de entorno process.env.port y process.env.PORT son utilizadas cuando haces deploy sobre servidores remotos en los que no necesariamente esté disponible el puerto 3978 o en donde otras configuraciones hagan que se utilicen puertos distintos. Para este tutorial utilizaremos el puerto 3978.
+
+
+
+
 
 
 ## El Azure bot Framework ##
