@@ -72,7 +72,7 @@ Ejemplo del package-lock.json
 
 Como el nombre lo indica, el bot framework emulator permite realizar pruebas y debugging de modo local de los chatbots que desarrolles.
 
-Agregar screenshot del bot emulator con el echo
+![Bot Framework Emulator](BotFrameworkEmulator.png?raw=true "Emulador de conversaciones Bot Framework")
 
 
 ## Manos al código ##
