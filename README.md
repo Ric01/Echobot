@@ -1,5 +1,5 @@
 # Echobot :speech_balloon:
-Tutorial para principiantes con un Bot desarrollado en **Azure Bot Framework** que repite lo que recibe (tutorial básico) utilizando el SDKv3.
+Construye un chatbot completamente funcional desde cero con este tutorial que está enfocado para principiantes, con un Bot desarrollado en **Azure Bot Framework** que repite lo que recibe (tutorial básico) utilizando el SDKv3.
 
 ![Echobot en Funcionamiento!](http://g.recordit.co/u404D68ybO.gif?raw=true "Echobot built on Azure")
 
